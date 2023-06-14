@@ -1,49 +1,68 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Navigation Bar */
 
 #home {
-  background-color:  #7600bc;
+  background-color: #008f7b;
   padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
   padding-top: 2cm;
-  padding-bottom: 2cm;
+  padding-bottom: 3cm;
   height: 5mm;
- }
+}
+
+@media screen and (max-width: 1200px) {
+  .dh-srink {
+    float: right;
+    padding-top: 0.75cm;
+    padding-right: 3cm !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .dh-hide {
+    display: none !important;
+  }
+}
 
 .topmenu {
+  vertical-align: auto;
   color: lightgray;
+  margin-top: 20px;
   margin: 10px;
   padding: 20px;
   font-size: 20px;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .topmenu:hover {
   color: white;
   /* Add the styles here */
-  font-weight: bolder;
-  text-decoration: underline;
+  /*font-weight: bolder;
+  text-decoration: underline;*/
 }
 
 .topdiv {
   float: right;
-  padding-right: 1cm;
+  padding-top: 0.75cm;
+  padding-right: 3cm;
 }
 
 .profile_name {
   float: left;
   padding-left: 2cm;
   /* Add the styles here */
-  color:rgb(217, 255, 127);
-  font-size: 25px;
+  color: #e8e8e8;
+  font-size: 40px;
 }
 
 .profile_name .contact_info {
+  margin: 10px;
   font-size: 15px;
   font-style: italic;
   display: flex;
@@ -52,24 +71,29 @@ body {
 }
 
 .contact_info img {
-  width:25px;
+  width: 25px;
   margin-right: 10px;
-  float:left;
+  float: left;
 }
 
 /* Titles */
 
 h2 {
-  text-align: justify;
   font-size: 50px;
-  text-align: center;
-  float: left;
-  color: #7600bc;
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 0px;
+  color: #008f7b;
 }
+
+h3 {
+  font-size: 25px;
+  margin: 1cm;
+  color: #343434;
+}
+
+h4 {
+  margin: 0.5cm;
+  color: #343434;
+}
+
 
 .introduction {
   text-align: justify;
@@ -82,23 +106,47 @@ h2 {
   position: relative;
 }
 
-/* Used in the About Me sections */
+/* Used in the About Me and Main sections */
 
 .container {
   display: flex;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+/* container */
+.responsive-two-column-grid {
+  display:block;
+}
+
+/* columns */
+.responsive-two-column-grid > * {
+  padding:1cm 0;
+  margin: auto;
+  
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+  .responsive-two-column-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* About Me */
 
 .about-me {
   display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
   align-items: center;
 }
 
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
-  color: #7600bc;
+  color: #008f7b;
 }
 
 #about-me p {
@@ -108,10 +156,55 @@ h2 {
 }
 
 .profile_image {
-  width: 350px;
+  width: 300px;
   height: fit-content;
   vertical-align: middle;
   margin: 5px;
+}
+
+.white_box {
+  background-color: rgb(236, 236, 236);
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px gray;
+  text-align: center;
+  margin: auto;
+  width: 65%;
+  font-size: 20px;
+}
+
+.box p {
+  font-size: 25px;
+  color: #343434;
+  text-align: left;
+  padding: 1cm;
+}
+
+.box {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px gray;
+  text-align: center;
+  margin: auto;
+  width: 65%;
+  font-size: 20px;
+}
+
+.white_box p {
+  font-size: 20px;
+  color: #343434;
+  text-align: left;
+  padding: 0 1.5cm;
+}
+
+.white_box h2 {
+  text-align: left;
+  padding: 0 1.5cm;
+}
+
+.white_box h3 {
+  text-align: left;
+  padding: 0 0.5cm;
 }
 
 /* Skills */
@@ -120,32 +213,35 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 .skill {
   border: 1px solid gray;
   display: block;
-  border-radius: 6px;
+  border-radius: 10px;
   text-align: center;
-  margin: 50px;
+  margin: 25px;
   padding: 10px;
-  width: 2in;
+  width: 6cm;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
 
 .skill img {
-  height: 35px;
+  max-height: 60px;
+  max-width: 60px;
+  padding: 1cm;
   align-items: center;
 }
 
 .skills h6 {
   align-items: center;
-  font-size: 20px;
+  font-size: 30px;
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
-} 
+}
 
 .skills p {
   align-items: center;
@@ -153,7 +249,7 @@ h2 {
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
-} 
+}
 
 .flex_center {
   display: flex;
@@ -205,29 +301,29 @@ h2 {
   text-align: left;
   width: 21.875rem;
   padding: 1rem;
-  background-color: #fff;
+  background-color: #e8e8e8;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
-  border:1px solid gray;
+  border: 1px solid gray;
   font-size: 18px;
-  height:150px
+  height: 150px;
 }
 
 .recommendation span {
-  color: #7600bc;
+  color: #008f7b;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Scroll to Top Button */
 
-.iconbutton{
+.iconbutton {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #7600bc;
+  background-color: #008f7b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,12 +336,12 @@ h2 {
 /* Form Pop-up */
 
 .popup {
-  width:400px;
+  width: 400px;
   background-color: #e8bcf0;
   border-radius: 3mm;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   position: fixed;
   /* padding: 30px; */
@@ -257,9 +353,9 @@ h2 {
 }
 
 .popup button {
-  background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  background-color: #e8e8e8;
+  border: 1px solid #008f7b;
+  color: #008f7b;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -271,9 +367,9 @@ h2 {
 }
 
 .popup button:hover {
-  background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
+  background-color: #e8e8e8;
+  border: 2px solid #008f7b;
+  color: #008f7b;
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -283,19 +379,21 @@ h2 {
 
 /* Recommendation Form */
 
-input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
-  width:100%;
+input,
+textarea {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 10px;
+  width: 100%;
 }
 
 fieldset {
   display: flexbox;
   align-content: center;
-  justify-content: center;  
-  padding: 25px; 
-  margin-left: 50px; 
-  margin-right: 50px;   
+  justify-content: center;
+  padding: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
   border: thin solid white;
   width: 50%;
 }
@@ -303,9 +401,9 @@ fieldset {
 /* Buttons */
 
 button {
-  background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  background-color: #e8e8e8;
+  border: 1px solid #008f7b;
+  color: #008f7b;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -316,9 +414,9 @@ button {
 }
 
 button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
-  color: #fff;
+  background-color: #008f7b;
+  border: 1px solid #008f7b;
+  color: #e8e8e8;
   display: block;
   border-radius: 6px;
   text-align: center;
