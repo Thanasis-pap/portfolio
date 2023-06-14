@@ -121,7 +121,7 @@ h4 {
 
 /* columns */
 .responsive-two-column-grid > * {
-  padding:1cm 0;
+  padding:2cm 0;
   margin: auto;
   
 }
@@ -130,7 +130,7 @@ h4 {
 @media (min-width:768px) {
   .responsive-two-column-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
   }
 }
 
@@ -162,8 +162,7 @@ h4 {
   margin: 5px;
 }
 
-.white_box {
-  background-color: rgb(236, 236, 236);
+.box {
   display: block;
   border-radius: 10px;
   box-shadow: 0 3px 10px gray;
@@ -180,33 +179,48 @@ h4 {
   padding: 1cm;
 }
 
-.box {
+.grey_box {
+  background-color: rgb(236, 236, 236);
   display: block;
   border-radius: 10px;
   box-shadow: 0 3px 10px gray;
-  text-align: center;
   margin: auto;
   width: 65%;
-  font-size: 20px;
 }
 
-.white_box p {
-  font-size: 20px;
+.grey_box p {
+  font-size: 18px;
   color: #343434;
   text-align: left;
   padding: 0 1.5cm;
 }
 
-.white_box h2 {
+.grey_box h2 {
   text-align: left;
   padding: 0 1.5cm;
 }
 
-.white_box h3 {
+.grey_box h3 {
   text-align: left;
   padding: 0 0.5cm;
 }
 
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column_left {
+  flex: 25%;
+  text-align: center;
+}
+
+.column {
+  flex: 50%;
+  text-align: left;
+}
 /* Skills */
 
 .all_skills {
