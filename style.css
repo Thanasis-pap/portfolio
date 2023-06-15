@@ -146,7 +146,7 @@ p {
 .container {
   display: flex;
   max-width: 75%;
-  margin: 0 auto;
+  margin: 0.5cm auto;
 }
 
 /* About Me */
@@ -193,7 +193,7 @@ p {
 }
 
 .grey_box {
-  background-color: #ECECEC;
+  background-color: #ececec;
   display: block;
   border-radius: 10px;
   box-shadow: 0 3px 10px gray;
@@ -235,6 +235,62 @@ p {
 .column {
   flex: 50%;
   text-align: left;
+}
+
+/* Button */
+
+.button_container {
+  display: flex;
+  max-width: 75%;
+  margin: 2cm auto;
+}
+
+button {
+  margin: auto;
+  padding: 2em 3.6em;
+  border: 2px solid #008f7b;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #008f7b;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #008f7b;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 150%;
+}
+
+button:hover {
+  color: #ffffff;
+}
+
+.button_text {
+  vertical-align: auto;
+  color: #008f7b;
+  margin-top: 20px;
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* Skills */
@@ -299,7 +355,6 @@ p {
 
 .project-card {
   margin: auto;
-  
 }
 
 .project-card h3 {
@@ -309,7 +364,6 @@ p {
 .project-card li {
   font-size: 20px;
 }
-
 
 /* Scroll to Top Button */
 
@@ -327,7 +381,6 @@ p {
   cursor: pointer;
 }
 
-
 /* Certifications */
 
 .all_certs {
@@ -336,7 +389,6 @@ p {
   flex-flow: wrap;
   justify-content: center;
 }
-
 
 .cert {
   border: 1px solid gray;
@@ -408,7 +460,10 @@ p {
   cursor: pointer;
 }
 
-.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
   position: relative;
   display: flex;
   align-items: center;
@@ -425,27 +480,27 @@ p {
   transform: scale(1);
 }
 
-.card .social-link1 img{
+.card .social-link1 img {
   width: 50px;
   height: 50px;
 }
 
 .card .social-link1:hover {
-  background: #4267B2;
+  background: #4267b2;
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link2 img{
+.card .social-link2 img {
   width: 50px;
   height: 50px;
 }
 
 .card .social-link2:hover {
-  background-color:	#1DA1F2;
+  background-color: #1da1f2;
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link3 img{
+.card .social-link3 img {
   width: 50px;
   height: 50px;
 }
@@ -455,12 +510,12 @@ p {
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link4 img{
+.card .social-link4 img {
   width: 50px;
   height: 50px;
 }
 
 .card .social-link4:hover {
-  background-color: #0072B1;
+  background-color: #0072b1;
   animation: bounce_613 0.4s linear;
 }
