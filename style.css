@@ -16,6 +16,17 @@ body {
   height: 5mm;
 }
 
+#footer {
+  background-color: #005e51;
+  padding-bottom: 1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
+  padding-top: 2cm;
+  padding-bottom: 3cm;
+  height: 5mm;
+}
+
 @media screen and (max-width: 1200px) {
   .dh-srink {
     float: right;
@@ -262,6 +273,7 @@ p {
 
 .projects-container {
   margin: auto;
+  padding-bottom: 100px;
 }
 
 .projects-container hr {
@@ -271,7 +283,7 @@ p {
 
 .project-card {
   margin: auto;
-  padding-bottom: 5px;
+  
 }
 
 .project-card h3 {
@@ -473,7 +485,153 @@ button:hover {
 
 .link:hover {
   color: gray;
-  /* Add the styles here */
-  /*font-weight: bolder;
-  text-decoration: underline;*/
+}
+
+/* Soft skills */
+
+.soft-card {
+  margin: auto;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.soft-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.soft-body {
+  padding: 20px;
+}
+
+.soft-skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.soft-skill-name {
+  width: 120px;
+  font-size: 16px;
+}
+
+.soft-kill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.soft-skill-percent {
+  background-color: #333;
+  height: 100%;
+}
+
+.soft-skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+/* Footer */
+.card {
+  margin: auto;
+  display: flex;
+  height: 70px;
+  width: 270px;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1 img{
+  width: 50px;
+  height: 50px;
+}
+
+.card .social-link1:hover {
+  background: #4267B2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2 img{
+  width: 50px;
+  height: 50px;
+}
+
+.card .social-link2:hover {
+  background-color:	#1DA1F2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3 img{
+  width: 50px;
+  height: 50px;
+}
+
+.card .social-link3:hover {
+  background-color: #343434;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4 img{
+  width: 50px;
+  height: 50px;
+}
+
+.card .social-link4:hover {
+  background-color: #0072B1;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
