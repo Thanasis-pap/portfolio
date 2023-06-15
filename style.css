@@ -42,9 +42,6 @@ body {
 
 .topmenu:hover {
   color: white;
-  /* Add the styles here */
-  /*font-weight: bolder;
-  text-decoration: underline;*/
 }
 
 .topdiv {
@@ -56,7 +53,6 @@ body {
 .profile_name {
   float: left;
   padding-left: 2cm;
-  /* Add the styles here */
   color: #e8e8e8;
   font-size: 40px;
 }
@@ -85,13 +81,15 @@ h2 {
 
 h3 {
   font-size: 25px;
-  margin: 1cm;
   color: #343434;
 }
 
 h4 {
-  margin: 0.5cm;
   color: #343434;
+}
+
+p {
+  font-size: 20px;
 }
 
 
@@ -110,28 +108,8 @@ h4 {
 
 .container {
   display: flex;
-  max-width: 65%;
+  max-width: 75%;
   margin: 0 auto;
-}
-
-/* container */
-.responsive-two-column-grid {
-  display:block;
-}
-
-/* columns */
-.responsive-two-column-grid > * {
-  padding:2cm 0;
-  margin: auto;
-  
-}
-
-/* tablet breakpoint */
-@media (min-width:768px) {
-  .responsive-two-column-grid {
-      display: grid;
-      grid-template-columns: 50% 50%;
-  }
 }
 
 /* About Me */
@@ -158,8 +136,6 @@ h4 {
 .profile_image {
   width: 300px;
   height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
 }
 
 .box {
@@ -179,8 +155,19 @@ h4 {
   padding: 1cm;
 }
 
+@media screen and (max-width: 1100px) {
+  .grey_box {
+    width: 90% !important;
+  }
+  .box {
+    width: 90% !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+}
 .grey_box {
-  background-color: rgb(236, 236, 236);
+  background-color: #ECECEC;
   display: block;
   border-radius: 10px;
   box-shadow: 0 3px 10px gray;
@@ -190,8 +177,8 @@ h4 {
 
 .grey_box p {
   font-size: 18px;
-  color: #343434;
   text-align: left;
+  color: #343434;
   padding: 0 1.5cm;
 }
 
@@ -202,7 +189,7 @@ h4 {
 
 .grey_box h3 {
   text-align: left;
-  padding: 0 0.5cm;
+  padding: 0 1.5cm;
 }
 
 .columns {
@@ -213,8 +200,8 @@ h4 {
 }
 
 .column_left {
-  flex: 25%;
-  text-align: center;
+  flex: 10%;
+  text-align: left;
 }
 
 .column {
@@ -245,7 +232,6 @@ h4 {
 .skill img {
   max-height: 60px;
   max-width: 60px;
-  padding: 1cm;
   align-items: center;
 }
 
@@ -274,29 +260,25 @@ h4 {
 /* Projects */
 
 .projects-container {
-  margin-top: 30px;
-  margin-left: 60px;
+  margin: auto;
 }
 
 .projects-container hr {
   border: 1px solid lightgray;
   width: 75%;
-  margin-left: 5cm;
 }
 
 .project-card {
-  margin: 0 15px 15px 30px;
+  margin: auto;
   padding-bottom: 5px;
 }
 
 .project-card h3 {
   font-size: 25px;
-  margin-left: 30px;
 }
 
 .project-card li {
   font-size: 20px;
-  margin-left: 30px;
 }
 
 /* Recommendations */
@@ -435,4 +417,60 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+/* Certifications */
+
+.all_certs {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.cert {
+  border: 1px solid gray;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  margin: 25px;
+  padding: 10px;
+  width: 6cm;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+}
+
+.cert img {
+  max-height: 130px;
+  max-width: 130px;
+  padding: 0.5cm;
+  align-items: center;
+}
+
+.cert h6 {
+  align-items: center;
+  font-size: 30px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+}
+
+.cert p {
+  align-items: center;
+  font-size: 20px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+.link {
+  color: #343434;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: gray;
+  /* Add the styles here */
+  /*font-weight: bolder;
+  text-decoration: underline;*/
 }
