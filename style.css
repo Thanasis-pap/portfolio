@@ -374,7 +374,7 @@ button:hover {
 /* Scroll to Top Button */
 
 .iconbutton {
-  max-width: 5%;
+  width: 4rem;
   border-radius: 100%;
   background-color: #008f7b;
   display: flex;
