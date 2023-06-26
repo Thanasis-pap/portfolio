@@ -5,21 +5,14 @@ body {
 
 #home {
   background-color: #008f7b;
-  padding-bottom: 1cm;
-  margin-left: -1cm;
-  margin-right: -1cm;
-  margin-top: -1cm;
-  padding-top: 2cm;
-  padding-bottom: 3cm;
-  height: 5mm;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+  height: 3rem;
 }
 
 #footer {
   background-color: #005e51;
   padding-bottom: 1cm;
-  margin-left: -1cm;
-  margin-right: -1cm;
-  margin-top: -1cm;
   padding-top: 2cm;
   padding-bottom: 3cm;
   height: 5mm;
@@ -32,6 +25,7 @@ body {
     padding-right: 3cm !important;
   }
 }
+
 
 @media screen and (max-width: 1100px) {
   .dh-hide {
@@ -80,9 +74,9 @@ body {
 .topmenu {
   vertical-align: auto;
   color: lightgray;
-  margin-top: 20px;
-  margin: 10px;
-  padding: 20px;
+  margin-top: 1rem;
+  margin: 1rem;
+  padding: 1rem;
   font-size: 20px;
   text-decoration: none;
 }
@@ -93,19 +87,19 @@ body {
 
 .topdiv {
   float: right;
-  padding-top: 0.75cm;
-  padding-right: 3cm;
+  padding-top: 2rem;
+  padding-right: 7rem;
 }
 
 .profile_name {
+  padding-left: 3rem;
   float: left;
-  padding-left: 2cm;
   color: #e8e8e8;
   font-size: 40px;
 }
 
 .profile_name .contact_info {
-  padding-top: 6px;
+  padding-top: 0.5rem;
   font-size: 18px;
   font-style: italic;
   display: flex;
@@ -146,7 +140,7 @@ p {
 .container {
   display: flex;
   max-width: 75%;
-  margin: 0.5cm auto;
+  margin: 2rem auto;
 }
 
 /* About Me */
@@ -160,18 +154,18 @@ p {
 
 #about-me h1 {
   font-size: 65px;
-  margin-top: 90px;
+  margin-top: 5rem;
   color: #008f7b;
 }
 
 #about-me p {
   font-size: 25px;
   color: rgb(128, 128, 128);
-  margin-top: -1cm;
+  margin-top: -1rem;
 }
 
 .profile_image {
-  width: 300px;
+  width: 20rem;
   height: fit-content;
 }
 
@@ -181,7 +175,7 @@ p {
   box-shadow: 0 3px 10px gray;
   text-align: center;
   margin: auto;
-  width: 65%;
+  width: 75%;
   font-size: 20px;
 }
 
@@ -198,24 +192,28 @@ p {
   border-radius: 10px;
   box-shadow: 0 3px 10px gray;
   margin: auto;
-  width: 65%;
+  width: 75%;
 }
 
 .grey_box p {
-  font-size: 18px;
+  width: 82.5%;
+  font-size: 1.2rem;
   text-align: left;
   color: #343434;
-  padding: 0 1.5cm;
+  padding: 0 2rem;
 }
 
 .grey_box h2 {
+  font-size: 2.5rem;
   text-align: left;
-  padding: 0 1.5cm;
+  width: 80%;
+  padding: 1rem 2rem;
 }
 
 .grey_box h3 {
   text-align: left;
-  padding: 0 1.5cm;
+  width: 80%;
+  padding: 0 2rem;
 }
 
 /* Columns */
@@ -225,11 +223,19 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  margin: auto;
 }
 
 .column_left {
-  flex: 10%;
+  flex: 25%;
   text-align: left;
+  margin: auto;
+}
+
+.column_right {
+  flex: 50%;
+  text-align: left;
+  margin: auto;
 }
 
 .column {
@@ -307,9 +313,9 @@ button:hover {
   display: block;
   border-radius: 10px;
   text-align: center;
-  margin: 25px;
-  padding: 20px;
-  width: 6cm;
+  margin: 2rem;
+  padding: 1rem;
+  width: 12rem;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
@@ -368,8 +374,7 @@ button:hover {
 /* Scroll to Top Button */
 
 .iconbutton {
-  width: 48px;
-  height: 48px;
+  max-width: 5%;
   border-radius: 100%;
   background-color: #008f7b;
   display: flex;
