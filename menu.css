@@ -53,6 +53,7 @@
 }
 
 #hamburger-menu {
+  z-index: 3;
   color: white;
   position: fixed;
   width: 40px;
@@ -114,7 +115,6 @@
 
 #hamburger-input:checked~.overlay {
   visibility: visible;
-  opacity: 0.4;
 }
 
 

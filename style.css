@@ -16,6 +16,8 @@ body {
   padding-bottom: 1cm;
   padding-top: 2cm;
   padding-bottom: 3cm;
+  margin:-0.5rem;
+  margin-top: 0;
   height: 5mm;
 }
 
@@ -376,6 +378,7 @@ button:hover {
 /* Scroll to Top Button */
 
 .iconbutton {
+  z-index: 2;
   width: 3em;
   height: 3rem;
   border-radius: 100%;
