@@ -53,12 +53,15 @@
 #hamburger-menu ul {
   text-align: center;
   padding-left: 0px;
+  padding-top: 2rem;
 }
 
 #hamburger-menu li {
   text-align: center;
   list-style-type: none;
   line-height: 3rem;
+  padding: 0.5rem;
+
 }
 
 #hamburger-menu a {
