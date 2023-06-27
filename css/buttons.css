@@ -1,0 +1,74 @@
+/* Button */
+
+.button_container {
+  display: flex;
+  max-width: 75%;
+  margin: 2cm auto;
+}
+
+button {
+  margin: auto;
+  padding: 2em 3.6em;
+  border: 2px solid #008f7b;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #008f7b;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #008f7b;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 150%;
+}
+
+button:hover {
+  color: #ffffff;
+}
+
+.button_text {
+  vertical-align: auto;
+  color: #008f7b;
+  margin-top: 20px;
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+
+/* Scroll to Top Button */
+
+.iconbutton {
+  z-index: 2;
+  width: 3em;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #008f7b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}

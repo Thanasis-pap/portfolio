@@ -1,8 +1,7 @@
-// This script is to validate the contact form fields.
-// In order  to send the form to an e-mail, we use the https://formspree.io webpage.
-// This is because we are using GitHub Pages to host our website, 
-// and GitHub Pages does not support server-side code, nor can we store the 
-// reciever's data privately.
+// This script validates the contact form fields.
+// In order  to send the form to an e-mail, we use the https://formspree.io forms webpage.
+// That's because GitHub Pages does not support server-side code, nor can we store the 
+// reciever's email data privately.
 
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;
