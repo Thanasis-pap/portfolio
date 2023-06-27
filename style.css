@@ -91,12 +91,13 @@ body {
 
 .topdiv {
   float: right;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-right: 7rem;
 }
 
 .profile_name {
   padding-left: 3rem;
+  padding-top: 2rem;
   float: left;
   color: #e8e8e8;
   font-size: 40px;
