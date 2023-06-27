@@ -1,28 +1,37 @@
-//! DEPRECATED
-function addRecommendation() {
-  // Get the message of the new recommendation
-  let recommendation = document.getElementById("new_recommendation");
-  // If the user has left a recommendation, display a pop-up
-  if (recommendation.value != null && recommendation.value.trim() != "") {
-    console.log("New recommendation added");
-    //Call showPopup here
-    showPopup(true);
-    // Create a new 'recommendation' element and set it's value to the user's message
-    var element = document.createElement("div");
-    element.setAttribute("class","recommendation");
-    element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
-    // Add this element to the end of the list of recommendations
-    document.getElementById("all_recommendations").appendChild(element); 
-    
-    // Reset the value of the textarea
-    recommendation.value = "";
+// This script is to validate the contact form fields.
+// In order  to send the form to an e-mail, we use the https://formspree.io webpage.
+// This is because we are using GitHub Pages to host our website, 
+// and GitHub Pages does not support server-side code, nor can we store the 
+// reciever's data privately.
+
+function validateEmail(email) {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+
+function validateForm() {
+  var senderName = document.forms["fs-frm"]["full-name"].value;
+  var email = document.forms["fs-frm"]["email-address"].value;
+  var message = document.forms["fs-frm"]["message"].value;
+  var error = "";
+
+  if (senderName == "") {
+    error += "Please provide your name.\n";
+  }
+
+  if (email == "") {
+    error += "Please provide your email address.\n";
+  } else if (!validateEmail(email)) {
+    error += "Please enter a valid email address.\n";
+  }
+
+  if (message == "") {
+    error += "Please enter a message.\n";
+  }
+
+  if (error != "") {
+    alert(error);
+    return false;
   }
 }
 
-function showPopup(bool) {
-  if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
-  } else {
-    document.getElementById('popup').style.visibility = 'hidden'
-  }
-}

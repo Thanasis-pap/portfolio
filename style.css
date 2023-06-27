@@ -69,6 +69,7 @@ body {
   }
 }
 
+
 /* Header */
 
 .topmenu {
@@ -525,3 +526,45 @@ button:hover {
   background-color: #0072b1;
   animation: bounce_613 0.4s linear;
 }
+
+/* Contact form */
+
+form {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #008f7b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #005e51;
+}
+
