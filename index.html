@@ -6,6 +6,7 @@
   <title>Athanasios Papias - Portfolio</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./menu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="./script.js"></script>
 
 </head>
@@ -35,21 +36,20 @@
     </div>
   </nav>
 
+  <input type="checkbox" id="hamburger-input" class="burger-shower" />
+  <label id="hamburger-menu" for="hamburger-input"><i class="fa fa-bars"></i>
+    <nav id="sidebar-menu">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </label>
 
-
-  <div class="hamburger-menu mn-hide">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
-
-    <ul class="menu__box">
-      <li><a class="menu__item" href="#about-me">About Me</a></li>
-      <li><a class="menu__item" href="#skills">Skills</a></li>
-      <li><a class="menu__item" href="#certifications">Certifications</a></li>
-      <li><a class="menu__item" href="#projects">Projects</a></li>
-    </ul>
-  </div>
+  <div class="overlay"></div>
 
 
 
@@ -507,10 +507,9 @@
     </section>
   </section>
 
-
-  <div class="container">
+  <section id="container">
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xoqoawjl"
-    method="post" onsubmit="validateForm()">
+      method="post" onsubmit="validateForm()">
       <h2>Contact Me</h2>
       <label for="full-name">Full Name</label>
       <input type="text" name="name" id="full-name" required="">
@@ -521,7 +520,20 @@
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
       <input type="submit" value="Submit">
     </form>
-  </div>
+  </section>
+
+  <section id="main" class="container">
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 23" stroke-width="1.5" stroke="white"
+          width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+  </section>
 
   <footer>
     <a class="link" href="https://www.github.com/thanasis-pap/portfolio">Webpage Source Code</a>

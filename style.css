@@ -5,6 +5,7 @@ body {
 
 #home {
   background-color: #008f7b;
+  margin:-0.5rem;
   padding-top: 3rem;
   padding-bottom: 8rem;
   height: 3rem;
@@ -530,7 +531,7 @@ button:hover {
 /* Contact form */
 
 form {
-  width: 70%;
+  width: 75%;
   margin: auto;
   padding-bottom: 5rem;
   font-size: 16px;
