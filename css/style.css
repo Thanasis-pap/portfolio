@@ -78,6 +78,16 @@ body {
   }
 }
 
+.fadeInUp{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.fadeInUp.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 /* Header */
 
