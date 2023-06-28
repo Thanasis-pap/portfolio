@@ -2,6 +2,7 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -78,14 +79,25 @@ body {
   }
 }
 
-.fadeInUp{
+.fadeInUp {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.fadeInUp.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fadeIn {
+  position: relative;
   opacity: 0;
   transition: 2s all ease;
 }
-.fadeInUp.active{
-  transform: translateY(0);
+
+.fadeIn.active {
   opacity: 1;
 }
 
