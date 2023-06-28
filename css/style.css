@@ -123,8 +123,15 @@ body {
   padding-right: 7rem;
 }
 
+.logo {
+  width: 75px;
+  padding-left: 3%;
+  padding-top: 0.5rem;
+  float: left;
+}
+
 .profile_name {
-  padding-left: 3rem;
+  padding-left: 0.75rem;
   padding-top: 2rem;
   float: left;
   color: #e8e8e8;
