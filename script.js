@@ -65,4 +65,5 @@ function fadeInUp() {
 }
 
 window.addEventListener("load", fadeIn);
+window.addEventListener("scroll", fadeIn);
 window.addEventListener("scroll", fadeInUp);
