@@ -27,15 +27,6 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-  .dh-srink {
-    float: right;
-    padding-top: 0.75cm;
-    padding-right: 3cm !important;
-  }
-}
-
-
-@media screen and (max-width: 1100px) {
   .dh-hide {
     display: none !important;
   }
@@ -108,7 +99,7 @@ body {
   color: lightgray;
   margin-top: 1rem;
   margin: 1rem;
-  padding: 1rem;
+  padding:1rem;
   font-size: 20px;
   text-decoration: none;
 }
@@ -120,18 +111,18 @@ body {
 .topdiv {
   float: right;
   padding-top: 3rem;
-  padding-right: 7rem;
+  padding-right: 7.5%;
 }
 
 .logo {
-  max-width: 75px;
-  padding-left: 3%;
-  padding-top: 0.5rem;
+  width: 75px;
+  padding-left: 3rem;
+  padding-top: 1rem;
   float: left;
 }
 
 .profile_name {
-  padding-left: 2%;
+  padding-left: 3rem;
   padding-top: 2rem;
   float: left;
   color: #e8e8e8;
