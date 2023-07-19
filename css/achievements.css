@@ -76,10 +76,8 @@
   border: 1px solid gray;
   border-radius: 10px;
   text-align: center;
-  margin: 2rem;
-  padding: 10px;
-  max-width: 60%;
-  width: 55rem;
+  max-width: 80%;
+  width: 60rem;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
