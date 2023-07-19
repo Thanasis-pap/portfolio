@@ -45,11 +45,11 @@ body {
     width: 90% !important;
   }
   .profile_name {
-      margin:auto !important;
-      padding-top: 2rem !important;
-      float: left !important;
-      color: #008f7b;
-      font-size: 40px;
+    margin:auto !important;
+    padding-top: 3rem !important;
+    float: left !important;
+    color: #008f7b;
+    font-size: 40px;
   }
 }
 
