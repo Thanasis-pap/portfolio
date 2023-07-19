@@ -48,8 +48,6 @@ body {
     margin:auto !important;
     padding-top: 3rem !important;
     float: left !important;
-    color: #008f7b;
-    font-size: 40px;
   }
 }
 
@@ -134,23 +132,6 @@ body {
   float: left;
   color: #008f7b;
   font-size: 40px;
-}
-
-.profile_name .contact_info {
-  padding-top: 0.5rem;
-  font-size: 18px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-}
-
-.contact_info img {
-  width: 25px;
-  margin-right: 10px;
-  float: left;
 }
 
 /* Titles */
