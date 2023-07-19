@@ -26,13 +26,13 @@ body {
   height: 5mm;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .dh-hide {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .grey_box {
     width: 90% !important;
   }
@@ -43,6 +43,13 @@ body {
 
   .container {
     width: 90% !important;
+  }
+  .profile_name {
+      margin:auto !important;
+      padding-top: 2rem !important;
+      float: left !important;
+      color: #008f7b;
+      font-size: 40px;
   }
 }
 
