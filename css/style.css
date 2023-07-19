@@ -8,12 +8,12 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
-#home {
-  background-color: #008f7b;
+#header {
+  background-color: white;
   margin: -0.5rem;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   padding-bottom: 8rem;
-  height: 3rem;
+  height: 1rem;
 }
 
 #footer {
@@ -96,7 +96,7 @@ body {
 
 .topmenu {
   vertical-align: auto;
-  color: lightgray;
+  color: gray;
   margin-top: 1rem;
   margin: 1rem;
   padding:1rem;
@@ -105,7 +105,7 @@ body {
 }
 
 .topmenu:hover {
-  color: white;
+  color: lightgray;
 }
 
 .topdiv {
@@ -125,7 +125,7 @@ body {
   padding-left: 3rem;
   padding-top: 2rem;
   float: left;
-  color: #e8e8e8;
+  color: #008f7b;
   font-size: 40px;
 }
 
@@ -196,8 +196,10 @@ p {
 }
 
 .profile_image {
-  width: 20rem;
+  width: 30rem;
+  max-width: 95%;
   height: fit-content;
+  border-radius: 10px;
 }
 
 .box {
@@ -258,14 +260,15 @@ p {
 }
 
 .column_left {
-  flex: 25%;
-  text-align: left;
-  margin: auto;
+  flex: 30%;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
 }
 
 .column_right {
-  flex: 50%;
-  text-align: left;
+  flex: 30%;
+  text-align: center;
   margin: auto;
 }
 
