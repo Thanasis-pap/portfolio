@@ -26,13 +26,13 @@ body {
   height: 5mm;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .dh-hide {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .grey_box {
     width: 90% !important;
   }
@@ -103,8 +103,8 @@ body {
   vertical-align: auto;
   color: gray;
   margin-top: 1rem;
-  margin: 1rem;
-  padding:1rem;
+  margin: 0.5rem;
+  padding:0.5rem;
   font-size: 20px;
   text-decoration: none;
 }
@@ -185,7 +185,7 @@ p {
 
 .profile_image {
   width: 30rem;
-  max-width: 95%;
+  max-width: 90%;
   height: fit-content;
   border-radius: 10px;
 }
@@ -248,14 +248,14 @@ p {
 }
 
 .column_left {
-  flex: 30%;
+  flex: 50%;
   text-align: right;
   margin-top: auto;
   margin-bottom: 1.5rem;
 }
 
 .column_right {
-  flex: 30%;
+  flex: 50%;
   text-align: center;
   margin: auto;
 }
@@ -311,7 +311,7 @@ input[type="submit"]:hover {
   margin: auto;
   display: flex;
   height: 70px;
-  width: 270px;
+  width: 340px;
 }
 
 .card svg {
@@ -330,7 +330,8 @@ input[type="submit"]:hover {
 .card .social-link1,
 .card .social-link2,
 .card .social-link3,
-.card .social-link4 {
+.card .social-link4,
+.card .social-link5 {
   position: relative;
   display: flex;
   align-items: center;
@@ -340,7 +341,7 @@ input[type="submit"]:hover {
   font-size: 24px;
   text-decoration: none;
   transition: 0.25s;
-  border-radius: 50px;
+  border-radius: 60px;
 }
 
 .card svg {
@@ -363,7 +364,7 @@ input[type="submit"]:hover {
 }
 
 .card .social-link2:hover {
-  background-color: #1da1f2;
+  background-color: #000000;
   animation: bounce_613 0.4s linear;
 }
 
@@ -384,5 +385,15 @@ input[type="submit"]:hover {
 
 .card .social-link4:hover {
   background-color: #0072b1;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link5 img {
+  width: 50px;
+  height: 50px;
+}
+
+.card .social-link5:hover {
+  background-color: #c92020;
   animation: bounce_613 0.4s linear;
 }
