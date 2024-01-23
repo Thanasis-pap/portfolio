@@ -191,8 +191,8 @@ p {
 }
 
 .university_image {
-  width: 10rem;
-  max-width: 90%;
+  width: 1rem;
+  max-width: 20%;
   height: fit-content;
   border-radius: 10px;
 }
