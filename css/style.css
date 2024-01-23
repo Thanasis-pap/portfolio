@@ -273,13 +273,18 @@ p {
 }
 
 .column_ed_left  {
-  flex: 20%;
-  text-align: center;
+  flex: 30%;
   margin: auto;
 }
 .column_ed_right  {
-  flex: 80%;
+  flex: 70%;
   margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .columns {
+    flex-direction: column;
+  }
 }
 
 /* Contact form */
