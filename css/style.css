@@ -190,6 +190,13 @@ p {
   border-radius: 10px;
 }
 
+.university_image {
+  width: 10rem;
+  max-width: 90%;
+  height: fit-content;
+  border-radius: 10px;
+}
+
 .box {
   display: block;
   border-radius: 10px;
@@ -263,6 +270,16 @@ p {
 .column {
   flex: 50%;
   text-align: left;
+}
+
+.column_ed_left  {
+  flex: 20%;
+  text-align: center;
+  margin: auto;
+}
+.column_ed_right  {
+  flex: 80%;
+  margin: auto;
 }
 
 /* Contact form */

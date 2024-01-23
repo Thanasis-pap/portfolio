@@ -21,8 +21,10 @@
 <head>
   <meta name="google-site-verification" content="-1uoV6Dr1ZtZFhPOY_OZOjwf_bS6HE2IohfTmTWEMxM" />
   <meta name="viewport" content="width=device-width, initial-scale=0.9">
-  <meta name="keywords" content="Athanasios Papias, Αθανάσιος Παπίας, Θανάσης Παπίας, Thanasis Papias, Thanasis_pap, Software Engineer, Computer Engineer, University of Ioannina">
-  <meta name="description" content="This is a portfolio page for Athanasios Papias, a Computer & Software Engineer, M.Eng. in Computer Science & Engineering, University of Ioannina">
+  <meta name="keywords"
+    content="Athanasios Papias, Αθανάσιος Παπίας, Θανάσης Παπίας, Thanasis Papias, Thanasis_pap, Software Engineer, Computer Engineer, University of Ioannina">
+  <meta name="description"
+    content="This is a portfolio page for Athanasios Papias, a Computer & Software Engineer, M.Eng. in Computer Science & Engineering, University of Ioannina">
   <title>Athanasios Papias - Portfolio</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/achievements.css" />
@@ -41,6 +43,7 @@
       </div>
       <div class="topdiv dh-hide">
         <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#education">Education</a>
         <a class="topmenu" href="#certifications">Certifications</a>
         <a class="topmenu" href="#skills">Skills</a>
         <a class="topmenu" href="#projects">Projects</a>
@@ -58,6 +61,7 @@
         </label>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#form">Contact me</a></li>
@@ -118,10 +122,12 @@
         </p>
         <h2>Education</h2>
         <h3>Intergrated Master of Engineering</h3>
-        <p><b>9/2016 - 9/2023:</b><br> Intergated MEng Diploma in Computer Science and Engineering, University of Ioannina School of Engineering, Ioannina, Greece.
+        <p><b>9/2016 - 9/2023:</b><br> Intergated MEng Diploma in Computer Science and Engineering, University of
+          Ioannina School of Engineering, Ioannina, Greece.
         <h3>Diploma Thesis</h3>
         <p><b>2/2022 - 7/2022:</b>
-        <br><b>Thesis topic: </b>Implementation of a Switched Mode Power Supply (SMPS), controlled by an STM32 microcontroller. <b>Grade: 10/10</b>
+          <br><b>Thesis topic: </b>Implementation of a Switched Mode Power Supply (SMPS), controlled by an STM32
+          microcontroller. <b>Grade: 10/10</b>
         </p>
         <h2>Publications</h2>
         <h3>Neurotechnology Publication</h3>
@@ -165,6 +171,29 @@
     </div>
   </div>
 
+  <section id="education" class="container">
+    <section id="education">
+      <h2>Education</h2>
+      <div class="columns">
+        <div class="column_ed_left fadeIn">
+          <img src="html_finalprojimages/university_logo.webp" class="university_image" />
+        </div>
+        <div class="column_ed_right fadeIn">
+          <h3>Intergrated Master of Computer Engineering (M.Eng.), University of Ioannina</h3>
+          <p><b>2016-2023</b></p>
+          <p>With academic distinction, I graduated from the University of Ioannina's School of Engineering in Ioannina, Greece, 
+            earning an Integrated M.Eng. Diploma in Computer Science and Engineering. My performance was recognized with the grade of 
+            <b>Λίαν Καλώς (Very Good)</b>, signifying my notable grasp of the field's theoretical foundations and practical applications.
+          </p>
+          <p><b>Master Thesis topic:</b></p>
+           <p>Implementation of a Switched Mode Power Supply (SMPS), controlled by an STM32
+            microcontroller, <b>Grade: 10/10</b>. <a class="link"
+            href="#thesis">See More</a></p>
+        </div>
+      </div>
+    </section>
+  </section>
+
   <section id="main" class="container">
     <section id="certifications">
       <h2>Certifications</h2>
@@ -186,7 +215,7 @@
   <!-- Skills -->
 
   <section id="main" class="container">
-    <section id="programming_good">
+    <section id="skills">
       <h2>Programming Languages</h2>
       <div style="clear:both;"></div>
       <h3>{Very good knowledge.}</h3>
@@ -228,7 +257,7 @@
       <div style="clear:both;"></div>
       <h3>{Good knowledge.}</h3>
       <div class="all_skills fadeInUp">
-        
+
         <div class="skill">
           <img src="html_finalprojimages/hashtag.webp" />
           <h4>C#</h4>
@@ -258,7 +287,7 @@
           <img src="html_finalprojimages/dart.webp" />
           <h4>Dart</h4>
         </div>
-        
+
         <div class="skill">
           <img src="html_finalprojimages/flutter.webp" />
           <h4>Flutter</h4>
@@ -381,7 +410,7 @@
   </section>
 
   <section id="main" class="container">
-    <section id="skills">
+    <section id="hardware">
       <h2>Hardware Skills</h2>
       <div style="clear:both;"></div>
       <h3>{Things I have worked on in the past.}</h3>
@@ -446,11 +475,11 @@
           </ul>
         </div>
         <hr>
-        <div class="project-card">
-          <h3>Buck Converter</h3>
+        <div class="project-card" id="thesis">
+          <h3>Buck Converter (Master Thesis)</h3>
           <ul>
-            <li>Developed a digitally-controled Buck Converter with the use of an STM32 microcontroller. <br>
-              (Repository Coming Soon) </li>
+            <li>Developed a digitally-controled Buck Converter with the use of an STM32 microcontroller.  <a class="link"
+              href="https://github.com/Thanasis-pap/Buck_Converter_STM32G4_Dev_Kit_No_FMAC">See Github Repo</a></li> </li>
           </ul>
         </div>
         <hr>
